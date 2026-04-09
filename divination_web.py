@@ -413,8 +413,8 @@ st.markdown("""
 #  侧边栏导航
 # ══════════════════════════════════════════════════════════════════════════════
 _PAGES = ["🏠 首页", "🃏 塔罗牌占卜", "⭐ 星座今日运势", "☯ 周易占卜", "🔢 数字命理", "🔮 赛博水晶球", "🎋 每日一签"]
-if "nav" not in st.session_state:
-    st.session_state.nav = _PAGES[0]
+if "page_idx" not in st.session_state:
+    st.session_state.page_idx = 0
 
 with st.sidebar:
     st.markdown("## 🔮 神秘占卜馆")
@@ -423,9 +423,10 @@ with st.sidebar:
     page = st.radio(
         "选择占卜方式",
         _PAGES,
-        key="nav",
+        index=st.session_state.page_idx,
         label_visibility="collapsed",
     )
+    st.session_state.page_idx = _PAGES.index(page)
     st.markdown("---")
     st.markdown("<span class='dim'>v1.0 · 融合东西方神秘学</span>", unsafe_allow_html=True)
 
@@ -438,6 +439,32 @@ if page == "🏠 首页":
     st.markdown("<p style='text-align:center;font-style:italic;color:#9b7fc0'>Mystical Divination Chamber</p>", unsafe_allow_html=True)
     st.markdown(f"<p style='text-align:center;color:#9b7fc0'>今日：{date.today().strftime('%Y年%m月%d日')} · 融合东西方神秘学传统</p>", unsafe_allow_html=True)
     st.markdown("---")
+
+    # 将首页卡片按钮样式化为卡片外观
+    st.markdown("""
+    <style>
+    div[data-testid="column"] .stButton > button {
+        background: #2d1650 !important;
+        border: 1px solid #9b59b6 !important;
+        border-radius: 10px !important;
+        padding: 24px 16px !important;
+        min-height: 130px !important;
+        width: 100% !important;
+        white-space: pre-wrap !important;
+        text-align: center !important;
+        line-height: 1.9 !important;
+        font-size: 0.95rem !important;
+        color: #e8d5f5 !important;
+        transition: border-color 0.2s, background 0.2s !important;
+    }
+    div[data-testid="column"] .stButton > button:hover {
+        background: #3d1a70 !important;
+        border-color: #f1c40f !important;
+        color: #fff !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     cols = st.columns(3)
     modules = [
         ("🃏", "塔罗牌占卜", "三张牌阵 · 过去·现在·未来", "🃏 塔罗牌占卜"),
@@ -449,15 +476,8 @@ if page == "🏠 首页":
     ]
     for i, (icon, name, desc, nav_target) in enumerate(modules):
         with cols[i % 3]:
-            st.markdown(f"""
-            <div class='card' style='text-align:center'>
-              <div style='font-size:2rem'>{icon}</div>
-              <p style='color:#e8d5f5;font-weight:bold;margin:4px 0'>{name}</p>
-              <p style='color:#9b7fc0;font-size:0.85rem'>{desc}</p>
-            </div>
-            """, unsafe_allow_html=True)
-            if st.button(f"进入 {name}", key=f"home_btn_{i}", use_container_width=True):
-                st.session_state.nav = nav_target
+            if st.button(f"{icon}\n{name}\n{desc}", key=f"home_btn_{i}", use_container_width=True):
+                st.session_state.page_idx = _PAGES.index(nav_target)
                 st.rerun()
 
 
