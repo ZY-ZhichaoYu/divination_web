@@ -326,6 +326,50 @@ NUMEROLOGY = {
 }
 
 # ══════════════════════════════════════════════════════════════════════════════
+#  每日一签数据
+# ══════════════════════════════════════════════════════════════════════════════
+FORTUNE_SLIPS = [
+    {"grade":"上上签","num":1,"title":"飞龙在天","poem":"鸿鹄展翅九万里，扶摇直上凌云端。","general":"诸事大吉，运势如日中天，所谋皆遂心愿。","love":"情投意合，缘分天定，美好姻缘水到渠成。","career":"贵人相助，事业腾飞，把握良机大展宏图。","health":"精力充沛，身体康泰，保持现有生活方式。"},
+    {"grade":"上签","num":2,"title":"春风化雨","poem":"随风潜入夜，润物细无声，好雨知时节。","general":"吉祥顺遂，如春风化雨，万事渐入佳境。","love":"感情升温，细水长流，真心终得真情回应。","career":"稳步积累，贵人提携，功到自然成。","health":"气血调和，注意休息，身心逐渐复苏。"},
+    {"grade":"上签","num":3,"title":"金榜题名","poem":"十年寒窗无人问，一举成名天下知。","general":"付出终有回报，努力将迎来丰厚收获。","love":"缘分在努力中成熟，主动表达情感。","career":"晋升有望，才华得到认可，把握展示机会。","health":"身体状况良好，保持锻炼习惯。"},
+    {"grade":"中上签","num":4,"title":"柳暗花明","poem":"山重水复疑无路，柳暗花明又一村。","general":"困境已过，转机将至，保持耐心迎接曙光。","love":"感情经历考验，风雨过后见彩虹。","career":"瓶颈期将突破，坚持方向不动摇。","health":"慢性问题逐步改善，配合调理事半功倍。"},
+    {"grade":"中上签","num":5,"title":"顺水行舟","poem":"乘风破浪会有时，直挂云帆济沧海。","general":"顺势而为，借力打力，事半功倍。","love":"感情顺畅，珍惜眼前，共同迎接美好未来。","career":"机会来临，顺势而上，不可迟疑。","health":"气运通畅，适当增加运动量。"},
+    {"grade":"中签","num":6,"title":"守株待兔","poem":"行到水穷处，坐看云起时。","general":"时机未到，宜守不宜攻，静观其变。","love":"感情需要耐心培育，急于求成适得其反。","career":"当下宜积累沉淀，待时机成熟再出击。","health":"注意劳逸结合，避免透支精力。"},
+    {"grade":"中签","num":7,"title":"云开见日","poem":"不经一番寒彻骨，哪得梅花扑鼻香。","general":"历经磨砺方能成就，当前困难是成长的必要。","love":"感情需要经营，多一分付出多一分收获。","career":"历练中成长，困难正在锤炼你的能力。","health":"有些小毛病需要认真对待，不可忽视。"},
+    {"grade":"中签","num":8,"title":"平步青云","poem":"不积跬步，无以至千里；不积小流，无以成江海。","general":"积累是关键，点滴努力终成大器。","love":"感情需要日积月累的陪伴与理解。","career":"踏实积累比急功近利更能走远。","health":"规律生活是健康的基础，坚持好习惯。"},
+    {"grade":"中签","num":9,"title":"阴晴不定","poem":"世事无常云变幻，随遇而安是智慧。","general":"运势起伏，保持平常心，不以物喜不以己悲。","love":"感情有些波动，多沟通少误会。","career":"情况变化较快，灵活应对是关键。","health":"情绪影响健康，保持心情平稳。"},
+    {"grade":"中下签","num":10,"title":"逆水行舟","poem":"行路难，行路难，多歧路，今安在。","general":"当前阻力较大，需要加倍努力方能前进。","love":"感情遭遇阻碍，需要更多耐心与包容。","career":"遇到挑战，不可退缩，逆境是磨砺。","health":"身体需要关注，及时休养调整。"},
+    {"grade":"中下签","num":11,"title":"困龙得水","poem":"潜龙勿用，待时而动；厚积薄发，终见天日。","general":"处于蛰伏期，当下不宜大动，积蓄力量。","love":"感情暂时受阻，保持信念静待缘分。","career":"低调蓄力，不宜冒进，等待时机。","health":"注意休息，让身体恢复元气。"},
+    {"grade":"下签","num":12,"title":"风雨如晦","poem":"风雨如晦，鸡鸣不已；既见君子，云胡不喜。","general":"困难时期，坚守本心，黑暗后必迎黎明。","love":"感情遇到考验，真心可化解误解。","career":"艰难时期需要坚持，不可轻言放弃。","health":"身体需要重视，及时就医调理。"},
+    {"grade":"上上签","num":13,"title":"鱼跃龙门","poem":"黄河之水天上来，一鱼化龙冲天际。","general":"大运来临，一跃而上，命运翻转在此一时。","love":"桃花运旺盛，姻缘天定，有情人终成眷属。","career":"重大突破在即，全力以赴把握机遇。","health":"生命力旺盛，气场强大，精力充沛。"},
+    {"grade":"上签","num":14,"title":"吉星高照","poem":"福星临门百事兴，吉祥如意满乾坤。","general":"福运当头，诸事顺利，吉星相护。","love":"有望遇见真命天子/天女，缘分近了。","career":"项目推进顺利，上级赏识，前途光明。","health":"体力充沛，精神饱满，免疫力强。"},
+    {"grade":"中上签","num":15,"title":"拨云见日","poem":"拨云睹青天，破浪见沧海。","general":"迷雾渐散，真相即将大白，坚持判断。","love":"误会即将消除，感情重回正轨。","career":"困惑即将解开，方向越来越清晰。","health":"困扰已久的问题，治疗方向即将明朗。"},
+    {"grade":"中签","num":16,"title":"随缘自在","poem":"菩提本无树，明镜亦非台；本来无一物，何处惹尘埃。","general":"放下执念，随缘而行，自在是最好的状态。","love":"不强求，顺其自然，缘来则聚缘去则散。","career":"不执着于结果，专注过程，结果自然来。","health":"心平气和是良药，保持内心平静。"},
+    {"grade":"中上签","num":17,"title":"厚积薄发","poem":"千淘万漉虽辛苦，吹尽狂沙始到金。","general":"积累到临界点，爆发时刻即将来临。","love":"情感在时间的沉淀中愈发浓郁。","career":"多年努力即将开花结果，坚持到底。","health":"调养到位，康复可期，坚持疗程。"},
+    {"grade":"中签","num":18,"title":"持之以恒","poem":"为山九仞，功亏一篑；持之以恒，方得始终。","general":"切忌功亏一篑，坚持到最后一步。","love":"感情不可三心二意，专一才能长久。","career":"现在放弃太可惜，距成功只差最后一步。","health":"调理不可半途而废，坚持才有效果。"},
+    {"grade":"上签","num":19,"title":"否极泰来","poem":"穷则变，变则通，通则久；物极必反，剥极而复。","general":"最坏的时候已经过去，好运正在回头。","love":"低谷期结束，感情重新焕发生机。","career":"困境即将反转，新机遇即将出现。","health":"身体正在好转，调理进入正循环。"},
+    {"grade":"中上签","num":20,"title":"心想事成","poem":"诚心所至，金石为开；志之所趋，无远弗届。","general":"心诚则灵，你的心愿正在被宇宙聆听。","love":"真心付出必有真情回报，相信爱情。","career":"明确目标，全力以赴，心想事成不是梦。","health":"积极的心态加速康复，正向思维是良药。"},
+    {"grade":"中下签","num":21,"title":"关关难过","poem":"天将降大任于斯人也，必先苦其心志。","general":"考验接连而来，但每一关都是成长的台阶。","love":"感情面临多重考验，需要坚定信念。","career":"阻碍较多，但克服每一个困难后你会更强。","health":"身体发出警示信号，认真对待健康。"},
+    {"grade":"中签","num":22,"title":"万事俱备","poem":"东风不与周郎便，铜雀春深锁二乔。","general":"准备充分，只欠东风，等待时机成熟。","love":"条件已经成熟，就差那一步勇气。","career":"万事俱备，抓住下一个出现的机会。","health":"身体状况稳定，维持现有的保养方案。"},
+    {"grade":"上上签","num":23,"title":"百年好合","poem":"在天愿作比翼鸟，在地愿为连理枝。","general":"贵人相聚，喜事连连，百年好合的吉兆。","love":"姻缘极佳，若有意中人，此时表白大吉。","career":"合作项目大吉，团队合力共创佳绩。","health":"身心和谐，内外平衡，状态极佳。"},
+    {"grade":"中上签","num":24,"title":"龙凤呈祥","poem":"龙游浅水遭虾戏，虎落平阳被犬欺；得志猫儿雄于虎，落魄凤凰不如鸡。","general":"运势上升，展示才华的时机已到。","love":"感情如龙凤呈祥，和谐美满。","career":"才能得以展现，迎来属于你的高光时刻。","health":"精力如虎，状态极佳，适合开展新计划。"},
+]
+
+# 星座元素配对（用于配对占卜）
+ELEM_COMPAT = {
+    ("火", "火"): (88, "热情碰撞，彼此激励，共同追逐冒险与梦想。两人都充满活力，需注意避免争强好胜。"),
+    ("火", "土"): (55, "一个冲动热烈，一个稳重务实，性格互补但节奏差异大，需要用心磨合与包容。"),
+    ("火", "风"): (85, "默契天成，思维碰撞产生灿烂火花，相处轻松愉快，充满浪漫与惊喜。"),
+    ("火", "水"): (58, "冰火交融，激情与温柔并存；既有强烈吸引，也有不少摩擦，考验双方包容力。"),
+    ("土", "土"): (80, "脚踏实地，志同道合，共同构建稳固踏实的生活，是可以相伴一生的伴侣。"),
+    ("土", "风"): (50, "一个执着落地，一个飘逸多变，思维方式迥异，需要极大的耐心去理解对方。"),
+    ("土", "水"): (88, "土水相生，互相滋养，情感深厚稳定，是最经典的相生组合。"),
+    ("风", "风"): (72, "思维活跃，话题永无止境，精神共鸣极强，但较为理性，需培养情感深度。"),
+    ("风", "水"): (65, "各有浪漫，但表达方式不同；风象理性，水象感性，需耐心倾听与理解。"),
+    ("水", "水"): (83, "情感深邃，心灵相通，共鸣强烈，但容易情绪共振，需要各自保持独立空间。"),
+}
+
+# ══════════════════════════════════════════════════════════════════════════════
 #  页面配置
 # ══════════════════════════════════════════════════════════════════════════════
 st.set_page_config(
@@ -368,13 +412,18 @@ st.markdown("""
 # ══════════════════════════════════════════════════════════════════════════════
 #  侧边栏导航
 # ══════════════════════════════════════════════════════════════════════════════
+_PAGES = ["🏠 首页", "🃏 塔罗牌占卜", "⭐ 星座今日运势", "☯ 周易占卜", "🔢 数字命理", "🔮 赛博水晶球", "🎋 每日一签"]
+if "nav" not in st.session_state:
+    st.session_state.nav = _PAGES[0]
+
 with st.sidebar:
     st.markdown("## 🔮 神秘占卜馆")
     st.markdown(f"<span class='dim'>{date.today().strftime('%Y年%m月%d日')}</span>", unsafe_allow_html=True)
     st.markdown("---")
     page = st.radio(
         "选择占卜方式",
-        ["🏠 首页", "🃏 塔罗牌占卜", "⭐ 星座今日运势", "☯ 周易占卜", "🔢 数字命理", "🔮 赛博水晶球"],
+        _PAGES,
+        key="nav",
         label_visibility="collapsed",
     )
     st.markdown("---")
@@ -389,17 +438,16 @@ if page == "🏠 首页":
     st.markdown("<p style='text-align:center;font-style:italic;color:#9b7fc0'>Mystical Divination Chamber</p>", unsafe_allow_html=True)
     st.markdown(f"<p style='text-align:center;color:#9b7fc0'>今日：{date.today().strftime('%Y年%m月%d日')} · 融合东西方神秘学传统</p>", unsafe_allow_html=True)
     st.markdown("---")
-    st.markdown("<p style='text-align:center;color:#9b7fc0'>请从左侧菜单选择您的占卜方式</p>", unsafe_allow_html=True)
-
     cols = st.columns(3)
     modules = [
-        ("🃏", "塔罗牌占卜", "三张牌阵 · 过去·现在·未来"),
-        ("⭐", "星座今日运势", "十二星座日运 · 综合·爱情·事业·健康"),
-        ("☯", "周易占卜", "铜钱起卦法 · 64卦·爻辞·指引"),
-        ("🔢", "数字命理", "生命数字解析 · 生命·灵魂·命运"),
-        ("🔮", "赛博水晶球", "神秘指引 · 是非·方向·预言"),
+        ("🃏", "塔罗牌占卜", "三张牌阵 · 过去·现在·未来", "🃏 塔罗牌占卜"),
+        ("⭐", "星座今日运势", "十二星座日运 · 综合·爱情·事业·健康", "⭐ 星座今日运势"),
+        ("☯", "周易占卜", "铜钱起卦法 · 64卦·爻辞·指引", "☯ 周易占卜"),
+        ("🔢", "数字命理", "生命数字解析 · 生命·灵魂·命运", "🔢 数字命理"),
+        ("🔮", "赛博水晶球", "神秘指引 · 是非·方向·预言", "🔮 赛博水晶球"),
+        ("🎋", "每日一签", "传统签诗 · 今日运势一签知", "🎋 每日一签"),
     ]
-    for i, (icon, name, desc) in enumerate(modules):
+    for i, (icon, name, desc, nav_target) in enumerate(modules):
         with cols[i % 3]:
             st.markdown(f"""
             <div class='card' style='text-align:center'>
@@ -408,19 +456,56 @@ if page == "🏠 首页":
               <p style='color:#9b7fc0;font-size:0.85rem'>{desc}</p>
             </div>
             """, unsafe_allow_html=True)
+            if st.button(f"进入 {name}", key=f"home_btn_{i}", use_container_width=True):
+                st.session_state.nav = nav_target
+                st.rerun()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  塔罗牌
 # ══════════════════════════════════════════════════════════════════════════════
 elif page == "🃏 塔罗牌占卜":
-    st.markdown("## 🃏 塔罗牌三张牌阵")
-    st.markdown("<span class='dim'>过去 · 现在 · 未来</span>", unsafe_allow_html=True)
+    st.markdown("## 🃏 塔罗牌占卜")
     st.markdown("---")
 
+    tarot_mode = st.radio("选择牌阵", ["🌙 每日一卡（快速）", "✦ 三张牌阵（过去·现在·未来）"], horizontal=True)
     name = st.text_input("请在心中默想你的问题，然后输入你的名字：", placeholder="输入名字后点击占卜")
 
-    if st.button("✦ 开始占卜 ✦", key="tarot_btn"):
+    if tarot_mode == "🌙 每日一卡（快速）":
+        if st.button("✦ 抽取今日塔罗 ✦", key="tarot_daily_btn"):
+            if not name.strip():
+                name = "神秘访客"
+            rng = seeded_rng(f"{name}{date.today().isoformat()}daily")
+            card = rng.choice(MAJOR_ARCANA)
+            rev = rng.choice([True, False])
+            rev_text = "🔴 逆位" if rev else "🟢 正位"
+            kw_list = card["rev_kw"] if rev else card["up_kw"]
+            reading = card["rev"] if rev else card["up"]
+            pos_label = "逆位" if rev else "正位"
+
+            col_l, col_c, col_r = st.columns([1, 2, 1])
+            with col_c:
+                st.markdown(f"""
+                <div class='card' style='text-align:center'>
+                  <p class='dim' style='margin:0'>今日塔罗 · {date.today().strftime('%Y年%m月%d日')}</p>
+                  <div style='font-size:4rem;margin:12px 0'>{card["sym"]}</div>
+                  <h2 style='color:#f1c40f !important;margin:4px 0'>{card["zh"]}</h2>
+                  <p style='color:#9b7fc0;font-style:italic'>{card["en"]} · {card["roman"]}</p>
+                  <p style='color:#9b7fc0;font-size:0.85rem'>🪐 {card["planet"]}　✦ {card["elem"]}象</p>
+                  <p style='margin:6px 0'>{rev_text}</p>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("---")
+            kw_str = "  ".join(f"`{kw}`" for kw in kw_list)
+            st.markdown(f"**关键词：** {kw_str}")
+            st.markdown(f"<p style='color:#e8d5f5'>{reading}</p>", unsafe_allow_html=True)
+            st.markdown(f"💡 **今日建议：** *{card['adv']}*")
+            st.markdown(f"<span class='dim'>今日幸运数字：{card['lucky']}</span>", unsafe_allow_html=True)
+
+    else:
+        st.markdown("<span class='dim'>过去 · 现在 · 未来</span>", unsafe_allow_html=True)
+    if tarot_mode != "🌙 每日一卡（快速）" and st.button("✦ 开始占卜 ✦", key="tarot_btn"):
         if not name.strip():
             name = "神秘访客"
         rng = seeded_rng(f"{name}{date.today().isoformat()}")
@@ -536,6 +621,35 @@ elif page == "⭐ 星座今日运势":
         st.metric("🎨 幸运色", l_color)
     with c3:
         st.metric("⏰ 幸运时段", l_hour)
+
+    # ── 星座配对 ──
+    st.markdown("---")
+    st.markdown("### 💞 星座配对测试")
+    zodiac_names2 = [f"{zz['sym']} {zz['name']}" for zz in ZODIAC]
+    partner_sel = st.selectbox("选择对方的星座：", zodiac_names2, key="partner_zodiac")
+    partner_idx = zodiac_names2.index(partner_sel)
+    z2 = ZODIAC[partner_idx]
+
+    e1, e2 = z["elem"], z2["elem"]
+    key = (e1, e2) if (e1, e2) in ELEM_COMPAT else (e2, e1)
+    score, compat_desc = ELEM_COMPAT.get(key, (70, "两人各有特色，需要用心经营感情。"))
+
+    bar_fill = int(score / 100 * 20)
+    bar_str = "█" * bar_fill + "░" * (20 - bar_fill)
+    score_color = "#2ecc71" if score >= 80 else "#f1c40f" if score >= 60 else "#e74c3c"
+
+    st.markdown(f"""
+    <div class='card'>
+      <p style='text-align:center;font-size:1.1rem;color:#e8d5f5;margin:0'>
+        {z["sym"]} <b>{z["name"]}</b>（{z["elem"]}象）
+        &nbsp;×&nbsp;
+        {z2["sym"]} <b>{z2["name"]}</b>（{z2["elem"]}象）
+      </p>
+      <p style='text-align:center;font-family:monospace;color:{score_color};font-size:1.2rem;margin:8px 0'>{bar_str}</p>
+      <p style='text-align:center;font-size:1.8rem;font-weight:bold;color:{score_color};margin:4px 0'>{score}分</p>
+      <p style='color:#9b7fc0;text-align:center;margin:4px 0'>{compat_desc}</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -798,3 +912,61 @@ elif page == "🔮 赛博水晶球":
     if st.button("清空记录"):
         st.session_state.crystal_history = []
         st.rerun()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  每日一签
+# ══════════════════════════════════════════════════════════════════════════════
+elif page == "🎋 每日一签":
+    st.markdown("## 🎋 每日一签")
+    st.markdown("<span class='dim'>传统签诗 · 每日一签，问问今天的运势</span>", unsafe_allow_html=True)
+    st.markdown("---")
+
+    name_qian = st.text_input("请输入你的名字（影响今日签文）：", placeholder="输入名字，每天一签")
+
+    if st.button("🎋 摇签求签", key="fortune_btn"):
+        if not name_qian.strip():
+            name_qian = "神秘访客"
+        rng = seeded_rng(f"{name_qian}{date.today().isoformat()}")
+        slip = rng.choice(FORTUNE_SLIPS)
+
+        grade_color = {
+            "上上签": "#f1c40f",
+            "上签": "#2ecc71",
+            "中上签": "#00c8c8",
+            "中签": "#e8d5f5",
+            "中下签": "#e67e22",
+            "下签": "#e74c3c",
+        }.get(slip["grade"], "#e8d5f5")
+
+        st.markdown(f"""
+        <div class='card' style='text-align:center'>
+          <p class='dim' style='margin:0'>{date.today().strftime('%Y年%m月%d日')} · {name_qian}的今日签</p>
+          <div style='font-size:3rem;margin:8px 0'>🎋</div>
+          <p style='color:{grade_color};font-size:1.5rem;font-weight:bold;margin:4px 0'>{slip["grade"]}</p>
+          <h2 style='color:#f1c40f !important;margin:4px 0'>第{slip["num"]}签 · {slip["title"]}</h2>
+          <div style='border-top:1px solid #9b59b6;margin:12px 40px;padding-top:12px'>
+            <p style='color:#c39bd3;font-style:italic;font-size:1.05rem;margin:0'>{slip["poem"]}</p>
+          </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("---")
+        cols_q = st.columns(2)
+        items = [
+            ("✦ 总体运势", slip["general"], "#e8d5f5"),
+            ("💕 感情姻缘", slip["love"], "#ff6b9d"),
+            ("💼 事业财运", slip["career"], "#00c8c8"),
+            ("🌿 健康提示", slip["health"], "#2ecc71"),
+        ]
+        for i, (title, text, color) in enumerate(items):
+            with cols_q[i % 2]:
+                st.markdown(f"""
+                <div class='card'>
+                  <p class='gold' style='font-weight:bold;margin:0 0 6px 0'>{title}</p>
+                  <p style='color:{color};margin:0'>{text}</p>
+                </div>
+                """, unsafe_allow_html=True)
+
+        st.markdown("---")
+        st.markdown(f"<p class='dim' style='text-align:center'>签文每日根据姓名与日期生成，明日再来可抽取新签。</p>", unsafe_allow_html=True)
